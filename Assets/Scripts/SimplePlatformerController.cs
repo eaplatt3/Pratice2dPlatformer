@@ -6,7 +6,7 @@ public class SimplePlatformerController : MonoBehaviour
 {
     //Player Movement Variables
     [HideInInspector] public bool faceingRight = true;
-    [HideInInspector] public bool jump = true;
+    [HideInInspector] public bool jump = false;
 
     //Variable Constraints on Movement 
     public float moveForce = 365f;

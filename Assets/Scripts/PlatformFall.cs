@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlatformFall : MonoBehaviour
 {
-
+    //Variable for Delaying Drop 
     public float fallDelay = 1f;
 
     private Rigidbody2D rb2d;
@@ -15,7 +15,8 @@ public class PlatformFall : MonoBehaviour
         rb2d = GetComponent<Rigidbody2D>();
     }
 
-     void OnCollisionEnter2D(Collision2D collision)
+    //When Player Collides with Platfrom it Falls
+    void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
             Invoke("Fall", fallDelay);
@@ -24,7 +25,7 @@ public class PlatformFall : MonoBehaviour
 
     void Fall()
     {
-        rb2d.isKinematic = false;
+        rb2d.isKinematic = false; //Sets that Collisions will effect the Rigidbody
     }
 
 }
