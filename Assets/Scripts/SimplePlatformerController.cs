@@ -8,7 +8,7 @@ public class SimplePlatformerController : MonoBehaviour
     [HideInInspector] public bool faceingRight = true;
     [HideInInspector] public bool jump = true;
 
-    //Constraints on Movement Variables
+    //Variable Constraints on Movement 
     public float moveForce = 365f;
     public float maxSpeed = 5f;
     public float jumpForce = 1000f;
