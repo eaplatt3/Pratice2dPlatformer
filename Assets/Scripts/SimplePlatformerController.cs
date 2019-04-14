@@ -51,11 +51,28 @@ public class SimplePlatformerController : MonoBehaviour
             rb2d.AddForce(Vector2.right * h * moveForce); //if Vector2 becomes Negative Player Goes Left
         }
 
-        //Checks if Plyer is Greater Then Max Speed
+        //Checks if Player is Greater Then Max Speed
         if(Mathf.Abs (rb2d.velocity.x) > maxSpeed)
         {
             //Which Direction and * by Max Speed in that Direction at Max Speed
             rb2d.velocity = new Vector2(Mathf.Sign(rb2d.velocity.x) * maxSpeed, rb2d.velocity.y); //Mathf.Sign returns 1 if postive # or -1 if negative #
+        }
+
+        //Fliping the Player based on what Direction Moving
+        if( h > 0 && !faceingRight)
+        {
+            Flip();
+        }
+        else if (h < 0 && faceingRight)
+        {
+            Flip();
+        }
+
+        if (jump)
+        {
+            anim.SetTrigger("Jump");
+            rb2d.AddForce(new Vector2(0f, jumpForce));
+            jump = false;
         }
     }
 

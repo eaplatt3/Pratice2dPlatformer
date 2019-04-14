@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 15
-  productGUID: 00000000000000000000000000000000
+  productGUID: e87ebd438e7c11c46a7018a63afcd880
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -602,7 +602,7 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   cloudProjectId: 602aa45a-496d-4912-be38-9b39195b1aec
   framebufferDepthMemorylessMode: 0
-  projectName: 
+  projectName: Pratice2dPlatformer
   organizationId: sicklyfreak
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
